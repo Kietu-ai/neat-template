@@ -15,7 +15,9 @@ neat.setMutationRate(0.3);
 const population = neat.getPopulation();
 for (let i = population.length - 1; i >= 0; i--) {
   const player = population[i];
-  neat.removePlayer(player);
+  if (player.hit(pipe)) {
+    neat.removePlayer(player);
+  }
 }
 
 console.log("hi");

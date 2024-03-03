@@ -66,4 +66,11 @@ export class NeuralNetwork {
   public getOutputNodes(): number {
     return this.outputNodes;
   }
+  public async saveWeights(path: string): Promise<void> {
+    await this.model.save(`file://${path}`);
+  }
+
+  public async loadWeights(path: string): Promise<void> {
+    this.model = (await tf.loadLayersModel(`file://${path}`)) as tf.Sequential;
+  }
 }

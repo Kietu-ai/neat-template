@@ -13,10 +13,10 @@ const outputNodes = 2;
 neat.initializePopulation(inputNodes, hiddenNodes, outputNodes);
 
 const population = neat.getPopulation();
-for (let i = population.length - 1; i >= 0; i--) {
-  const player = population[i];
-  neat.removePlayer(player);
-}
+//for (let i = population.length - 1; i >= 0; i--) {
+//const player = population[i];
+//neat.removePlayer(player);
+//}
 
 console.log("hi");
 neat.evolveNextGeneration();

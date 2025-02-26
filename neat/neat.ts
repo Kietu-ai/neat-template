@@ -1,6 +1,6 @@
 import { NeuralNetwork } from "./neuralNetwork";
 import * as tf from "@tensorflow/tfjs";
-import { Player } from "./player";
+import { Player } from "../dino/entities/player";
 
 export class Neat {
   private population: Player[];
@@ -13,7 +13,6 @@ export class Neat {
     this.populationSize = populationSize;
     this.generation = 1;
     this.population = [];
-    this.populationSize = populationSize;
     this.mutationRate = 0.4;
     this.savedOrganisms = [];
   }

@@ -6,7 +6,7 @@ tf.setBackend("cpu");
 const populationSize = 10;
 const neat = new Neat(populationSize);
 
-const inputNodes = 3;
+const inputNodes = 5;
 const hiddenNodes = 2;
 const outputNodes = 2;
 
@@ -18,5 +18,4 @@ for (let i = population.length - 1; i >= 0; i--) {
   neat.removePlayer(player);
 }
 
-console.log("hi");
 neat.evolveNextGeneration();

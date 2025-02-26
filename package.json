@@ -9,9 +9,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^5.3.3"
+    "@types/three": "^0.173.0",
+    "typescript": "^5.3.3",
+    "vite": "^6.2.0"
   },
   "dependencies": {
-    "@tensorflow/tfjs": "^4.17.0"
+    "@tensorflow/tfjs": "^4.17.0",
+    "three": "^0.173.0"
   }
 }

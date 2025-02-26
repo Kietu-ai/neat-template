@@ -70,7 +70,6 @@ export class Player extends Genome {
       const distance = obstacle.position.x - this.position.x;
 
       if (distance > 0 && distance < minDistance) {
-        // Only consider obstacles ahead
         minDistance = distance;
         closestObstacle = obstacle;
       }
@@ -94,6 +93,7 @@ export class Player extends Genome {
         this.jump();
         break;
       case 1:
+        //Other action
         break;
       default:
     }

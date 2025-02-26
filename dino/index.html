@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My first three.js app</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+          sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white">
+    <div id="game-container" class="relative w-full">
+      <!-- Game stats overlay -->
+      <div
+        id="game-stats"
+        class="absolute top-4 left-4 bg-black/70 backdrop-blur-sm p-4 rounded-lg shadow-lg z-10"
+      >
+        <h2 class="text-xl font-bold mb-3">Estatísticas do Jogo</h2>
+        <div class="space-y-2">
+          <div class="flex justify-between">
+            <span>Geração:</span>
+            <span id="generation" class="font-mono">0</span>
+          </div>
+          <div class="flex justify-between">
+            <span>População:</span>
+            <span id="population" class="font-mono">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="../main.ts"></script>
+  </body>
+</html>

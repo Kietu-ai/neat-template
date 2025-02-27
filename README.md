@@ -260,7 +260,7 @@ No futuro, pretendo permitir facilmente que qualquer um adicione uma funcionalid
 
 ## Mutação
 
-Para cada jogador da nova geração, percorremos os seus pesos (pesos ocultos, pesos de saída e viéses) e há uma probabilidade de serem mutados ou não.
+Para cada jogador da nova geração, percorremos os seus pesos (pesos ocultos, pesos de saída e viéses) e há uma probabilidade de sofrerem uma mutação ou não.
 
 ```typescript
 if (Math.random() < this.mutationRate) {
